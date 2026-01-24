@@ -1,14 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/output.css">
-    <title>Belajar Tailwind</title>
-</head>
-<body>
-    <h1 class="text-xl font-bold text-blue-500 ">Hello World!</h1>
-    <a href="#" class="bg-green-500 p-2 inline-block m-2 rounded shadow-sm hover:bg-green-700 text-white  ">view</a>
-    <p class="m-3 bg-yellow-200 p-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt harum perspiciatis eaque? Corporis nulla dolorem sequi beatae, facere explicabo, quaerat perferendis aliquam sit ullam qui possimus, quasi voluptatem labore! Nam, est odio consequatur aspernatur eveniet saepe architecto? Ex quos libero id iure iste laboriosam, tempore quas ipsam ipsum quae incidunt!</p>
-</body>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: '3.25rem'
+            },
+            fontFamily: {
+              inter: ['Inter'],
+            },
+            colors: {
+              ron: '#dada'
+            }
+          },
+        },
+      }
+    </script>
+  </head>
+  <body>
+    <h1 class="text-8xl font-bold text-center my-10 bg-gradient-to-tl from-lime-400 to-yellow-300 bg-clip-text text-transparent">Mari Belajar Tailwind CSS</h1>
+
+    <section class="mb-10 bg-gradient-to-br from-red-500 to-blue-500">
+      <h2 class="text-3xl text-center">Spacing</h2>
+      <div class="m-13 bg-white opacity-35">Margin</div>
+      <div class="py-8  bg-white opacity-35">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-violet-400">
+      <h2 class="text-3xl text-center">Sizing</h2>
+      <div class="w-32 h-32 bg-ron">Kotak 1</div>
+    </section>
+
+    <section class="mb-96 font-inter max-w-2xl mx-auto">
+      <h2 class="my-3 text-5xl font-bold bg-gradient-to-tl from-violet-500 to-teal-400 bg-clip-text text-transparent">Belajar Menggunakan Tailwind</h2>
+
+      <div class="mb-4 text-lg text-gray-500 font-semibold">by <a href="#" class="text-gray-700">Roni Kurnia</a>, 23 Januari 2026</div>
+
+      <p class="mb-4">Lorem, ipsum dolor sit amet <a href="#" class="underline font-semibold text-blue-500" >consectetur</a> adipisicing elit. Adipisci quos fuga suscipit molestias illo, impedit earum aspernatur quaerat, accusantium quam nam asperiores! Dolores iusto, unde ipsum porro voluptate voluptatem totam molestias vero mollitia nisi recusandae dolorum nulla, enim corporis id illum itaque iste saepe nam nobis assumenda repudiandae! Optio, aperiam?</p>
+
+      <p class="mb-4 font-mono">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, consectetur! Nulla repudiandae exercitationem architecto est magni modi hic necessitatibus quia.</p>
+
+      <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tempore omnis alias atque deleniti debitis! Corporis ipsum ea unde nam quaerat expedita nesciunt dicta optio illo. Unde perspiciatis tempora ducimus.</p>
+    </section>
+  </body>
 </html>
