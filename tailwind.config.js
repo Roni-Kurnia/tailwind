@@ -1,7 +1,20 @@
 module.exports = {
   content: ['./public/**/*.{html, js}'],
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        13: '3.25rem'
+      },
+
+      fontFamily: {
+        inter: ['Inter'],
+      },
+
+      colors: {
+        ron: '#dada',
+      },
+    },
   },
   plugins: [],
 }
